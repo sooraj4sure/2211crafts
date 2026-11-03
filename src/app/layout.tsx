@@ -31,14 +31,14 @@ function Header() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2">
           <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-blush-400 to-blush-600 text-lg text-white shadow-bead">
-            🩷
+            A
           </span>
           <span className="font-display text-lg font-extrabold text-blush-700">
             Ashmita Art &amp; Craft
           </span>
-          <span className="ml-1 rounded-full bg-gold/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-gold-dark">
+          {/* <span className="ml-1 rounded-full bg-gold/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-gold-dark">
             Demo v1
-          </span>
+          </span> */}
         </Link>
         <nav className="hidden md:flex items-center gap-1">
           {NAV.map((n) => (
@@ -57,7 +57,7 @@ function Header() {
           rel="noopener"
           className="md:hidden rounded-full bg-blush-500 px-4 py-2 text-sm font-bold text-white shadow-bead"
         >
-          Follow 💗
+          Follow
         </Link>
       </div>
       {/* Mobile nav: horizontal bead-scroll */}
