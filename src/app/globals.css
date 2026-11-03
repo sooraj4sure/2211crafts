@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-cocoa font-body antialiased;
+}
+
+/* Reveal-on-scroll helper (used with .revealed by Reveal component) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Soft polka-dot texture for section backgrounds */
+.dot-bg {
+  background-image: radial-gradient(rgba(232, 89, 138, 0.12) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+.shimmer-text {
+  background: linear-gradient(110deg, #b42a5c 20%, #e8598a 40%, #e7c873 50%, #e8598a 60%, #b42a5c 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+::selection {
+  background: #f7aec7;
+  color: #4a2c35;
+}
